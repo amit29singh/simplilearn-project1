@@ -21,7 +21,7 @@ node {
         app.inside {
             sh 'echo "Tests passed"'
             sh 'docker run -it -p 8000:8000 trydocker29/dockerwitjenkins'
-            sh  'docker start trydocker29/dockerwitjenkins'
+            sh 'docker start trydocker29/dockerwitjenkins'
         }
     }
 
