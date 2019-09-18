@@ -36,7 +36,9 @@ node {
     
     stage('Run image') {
         /* Now run this image */
-
-        app.run("latest")
+       docker.withRegistry('https://registry.hub.docker.com', 'docker-hub-credentials') {
+            app.run("${env.BUILD_NUMBER}")
+            app.run("latest")
+        }        
     }
 }
