@@ -37,7 +37,7 @@ node {
     stage('Run image') {
         /* Now run this image */
        docker.withRegistry('https://registry.hub.docker.com', 'docker-hub-credentials') {
-            app.run("trydocker29/dockerwitjenkins")          
+            app.run()          
         }        
     }
 }
