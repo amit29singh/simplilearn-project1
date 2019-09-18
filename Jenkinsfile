@@ -37,6 +37,6 @@ node {
     stage('Run image') {
         /* Now run this image */
 
-        app.run("${env.BUILD_NUMBER}")
+        app.run("latest")
     }
 }
