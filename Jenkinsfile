@@ -11,7 +11,7 @@ node {
         /* This builds the actual image; synonymous to
          * docker build on the command line */
 
-        app = docker.build("trydocker29/dockerwitjenkins")
+        app = docker.build("trydocker29/simplilearn-project1")
     }
 
     stage('Test image') {
